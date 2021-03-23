@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScrip ES6</title>
+    <script>
+        //software de marcenaria
+        // cadeira e sofá
+
+        //paradigma procedural
+
+        //cadeira
+        /* let qtede_pernas = 4
+         let giratoria = false
+         let cor = 'azul'
+   
+         function gira_cadeira() {
+             if (giratoria === true) {
+                 console.log('girou')
+             }else {
+                 console.log('cadeira não é giratória')
+             }
+         }
+   gira_cadeira()
+   */
+
+        //paradigma OO
+
+        class Cadeira {
+            constructor(qtde_pernas, giratoria, cor) {
+                this.qtde_pernas = qtde_pernas
+                this.giratoria = giratoria
+                this.cor = cor
+            }
+
+            girarCadeira() {
+                if (this.giratoria === true) {
+                    console.log('Girou')
+                } else {
+                    console.log('cadeira não gira')
+                }
+            }
+
+        }
+
+        let cadeira = new Cadeira(4, false, 'azul')
+        let cadeira2 = new Cadeira(4, true, 'azul')
+        console.log(cadeira)
+        cadeira.girarCadeira()
+        console.log(cadeira2)
+        cadeira.girarCadeira()
+
+    </script>
+
+</head>
+
+<body>
+
+
+</body>
+
+</html>
