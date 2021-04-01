@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factury</title>
+    <script>
+
+
+        let Bicicleta1 = {
+            cor: 'Branca',
+            marcha: 'Única',
+            aro: 10,
+            pedalar() { console.log('Método pedalar execultado') }
+        }
+
+        let Bicicleta2 = {
+            cor: 'Vermelha',
+            marcha: '18',
+            aro: 26,
+            pedalar() { console.log('Método pedalar execultado') }
+        }
+
+        //-------------------------------------------------------
+
+        let BicicletaFactury = function (cor, marcha, aro) {
+            return {
+                //Como o nome da variavel é o mesmo do valor podemos ocultar 
+                //apenas como cor, marcha e aro, sem a necessidade de colocar como:
+                // cor: cor, marcha: marcha, aro: aro,
+                cor,
+                marcha,
+                aro,
+                pedalar() { { console.log('Método pedalar execultado') } }
+            }
+        }
+
+        let Bicicleta3 = BicicletaFactury('Vermelha', '18', 26)
+        console.log(Bicicleta3)
+
+        let Bicicleta4 = BicicletaFactury('Preta', '21', 29)
+        console.log(Bicicleta4)
+       
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
